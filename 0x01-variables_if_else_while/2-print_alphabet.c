@@ -1,18 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - main function
+ * main - prints the alphabet
  *
  * Return: always 0
  */
 
 int main(void)
 {
-	char i;
-	int c;
+	char alp[26] = "abcdefhijklmnopqrstuvwxyz";
+	int i;
 
-	for (i = 'a' ; i <= 'z' ; i++)
-		putchar(i);
-	putchar ("\n");
+	for (i = 0; i <= 26; i++)
+	{
+		putchar(alp[i]);
+	}
 	return (0);
 }
