@@ -9,11 +9,11 @@ int main(void)
 {
 	int i, z = 0;
 
-	while (i < 1024)
+	for (i = 0 ; i < 10 ; i++)
 	{
 	if ((i % 3 == 0) || (i % 5 == 0))
 	{
-	i++;
+		z = z + i;
 	}
 	printf("%d\n", z);
 	}
