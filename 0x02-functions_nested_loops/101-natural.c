@@ -7,7 +7,10 @@
 
 int main(void)
 {
-	int i, z = 0;
+	int i;
+	int  z;
+
+	z = 0;
 
 	for (i = 0 ; i < 10 ; i++)
 	{
