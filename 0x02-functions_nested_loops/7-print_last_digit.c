@@ -3,9 +3,9 @@
 /**
  *print_last_digit - function that prints last digit
  *
- *@i: function parameter
+ *@i: input number as an integer
  *
- * Return: value of the last digit of number
+ * Return: last digit
  */
 
 int print_last_digit(int i)
@@ -13,10 +13,14 @@ int print_last_digit(int i)
 	int k;
 
 	k = i % 10;
-	if (k < 10)
+	if (k < 0)
 	{
-		k = k * -1;
+		_putchar(-k + 48);
+		return (-k);
 	}
-	_putchar(k + '0');
-	return (k);
+	else
+	{
+		_putchar(k + 48);
+		return (k);
+	}
 }
