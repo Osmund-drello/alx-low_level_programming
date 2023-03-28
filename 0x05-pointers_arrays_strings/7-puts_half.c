@@ -8,7 +8,7 @@
  * @str: this is the input string
  */
 
-void _puts_half(char *str)
+void puts_half(char *str)
 {
 	int full_string, half_string;
 
